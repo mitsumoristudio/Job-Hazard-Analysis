@@ -20,6 +20,8 @@
 		E499C2E52C13F33E00AF7BA8 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E42C13F33E00AF7BA8 /* VisualEffectBlur.swift */; };
 		E499C2E72C13F3B300AF7BA8 /* TextFrameViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E62C13F3B300AF7BA8 /* TextFrameViewModifier.swift */; };
 		E499C2E92C15B1C600AF7BA8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E82C15B1C600AF7BA8 /* ImagePicker.swift */; };
+		E499C2EB2C19838900AF7BA8 /* PreEquipmentInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */; };
+		E499C2ED2C19860300AF7BA8 /* PreequipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2EC2C19860300AF7BA8 /* PreequipmentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		E499C2E42C13F33E00AF7BA8 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E499C2E62C13F3B300AF7BA8 /* TextFrameViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFrameViewModifier.swift; sourceTree = "<group>"; };
 		E499C2E82C15B1C600AF7BA8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreEquipmentInspection.swift; sourceTree = "<group>"; };
+		E499C2EC2C19860300AF7BA8 /* PreequipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreequipmentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			children = (
 				E499C2B02C13EA2100AF7BA8 /* Job_Hazard_AnalysisApp.swift */,
 				E499C2B22C13EA2100AF7BA8 /* ContentView.swift */,
+				E499C2EE2C198D0B00AF7BA8 /* Model */,
 				E499C2E32C13F32900AF7BA8 /* Extensions */,
 				E499C2E02C13F11200AF7BA8 /* Views */,
 				E499C2DA2C13EA5200AF7BA8 /* Systems */,
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E499C2E12C13F13200AF7BA8 /* ProjectAddView.swift */,
+				E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +173,14 @@
 				E499C2E82C15B1C600AF7BA8 /* ImagePicker.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E499C2EE2C198D0B00AF7BA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E499C2EC2C19860300AF7BA8 /* PreequipmentModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +315,12 @@
 			files = (
 				E499C2E22C13F13300AF7BA8 /* ProjectAddView.swift in Sources */,
 				E499C2B32C13EA2100AF7BA8 /* ContentView.swift in Sources */,
+				E499C2ED2C19860300AF7BA8 /* PreequipmentModel.swift in Sources */,
 				E499C2E72C13F3B300AF7BA8 /* TextFrameViewModifier.swift in Sources */,
 				E499C2DF2C13F01300AF7BA8 /* Persistence.swift in Sources */,
 				E499C2E52C13F33E00AF7BA8 /* VisualEffectBlur.swift in Sources */,
 				E499C2E92C15B1C600AF7BA8 /* ImagePicker.swift in Sources */,
+				E499C2EB2C19838900AF7BA8 /* PreEquipmentInspection.swift in Sources */,
 				E499C2B12C13EA2100AF7BA8 /* Job_Hazard_AnalysisApp.swift in Sources */,
 				E499C2DD2C13EA6900AF7BA8 /* JobEntityCoreData.xcdatamodeld in Sources */,
 			);
