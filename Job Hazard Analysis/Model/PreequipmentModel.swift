@@ -9,14 +9,15 @@ import Foundation
 import SwiftUI
 
 struct PreequipmentModel: Identifiable, Codable {
-    var id: UUID
+    var id: UUID?
     var operatorname: String
     var date: Date?
     var equipmentModelName: String
     var equipmentSerialNumber: String?
     
+    
     // From the Ground
-    var periodicHeadline: String = "The Periodic Maintenance Checklist as outlined in the Operator's Manual has been completed and any necessary maintenance items have been addressed "
+    var periodicHeadline: String = "Note: The Periodic Maintenance Checklist as outlined in the Operator's Manual has been completed and any necessary maintenance items have been addressed "
     
     var overall: String = "Overall Machine Appearance"
     var grabbars: String = "ROPS, Grab Bars, Steps, Hand Holds"
@@ -52,5 +53,7 @@ struct PreequipmentModel: Identifiable, Codable {
     var washerFluid: String = "Washer Fluid"
     var fuelLevel: String = "Fuel"
     var def: String = "DEF"
+    
+    
     
 }

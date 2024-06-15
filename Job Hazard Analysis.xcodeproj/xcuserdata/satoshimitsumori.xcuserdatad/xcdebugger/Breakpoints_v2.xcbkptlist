@@ -14,10 +14,42 @@
             filePath = "Job Hazard Analysis/Model/PreequipmentModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "PreequipmentModel"
             landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "F0883668-9789-4B7E-A81A-5AAD1A4C0A8D - 43484b2292884db7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Job_Hazard_Analysis.PreequipmentModel.init(from: Swift.Decoder) throws -&gt; Job_Hazard_Analysis.PreequipmentModel"
+                  moduleName = "Job Hazard Analysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satoshimitsumori/Desktop/Work%20Folder/Job%20Hazard%20Analysis/Job%20Hazard%20Analysis/Model/PreequipmentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1564">
+               </Location>
+               <Location
+                  uuid = "F0883668-9789-4B7E-A81A-5AAD1A4C0A8D - 19f6a7c94a5125e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 14 of Job_Hazard_Analysis.PreequipmentModel.init(id: Swift.Optional&lt;Foundation.UUID&gt;, operatorname: Swift.String, date: Swift.Optional&lt;Foundation.Date&gt;, equipmentModelName: Swift.String, equipmentSerialNumber: Swift.Optional&lt;Swift.String&gt;, periodicHeadline: Swift.String, overall: Swift.String, grabbars: Swift.String, frame: Swift.String, harnesses: Swift.String, tires: Swift.String, undertheMachine: Swift.String, belts: Swift.String, coolerCOres: Swift.String, cabWindows: Swift.String, overallCleanliness: Swift.String, operatorManual: Swift.String, seats: Swift.String, mirror: Swift.String, windshield: Swift.String, defroster: Swift.String, gauges: Swift.String, fuel: Swift.String, fireExtinguisher: Swift.String, horn: Swift.String, parkBrakes: Swift.String, steering: Swift.String, travelAlarm: Swift.String, diagnostic: Swift.String, engineOils: Swift.String, hydraulicOils: Swift.String, transmissionOil: Swift.String, engineCoolant: Swift.String, washerFluid: Swift.String, fuelLevel: Swift.String, def: Swift.String) -&gt; Job_Hazard_Analysis.PreequipmentModel"
+                  moduleName = "Job Hazard Analysis"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/satoshimitsumori/Desktop/Work%20Folder/Job%20Hazard%20Analysis/Job%20Hazard%20Analysis/Model/PreequipmentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

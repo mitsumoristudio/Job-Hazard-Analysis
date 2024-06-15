@@ -154,7 +154,7 @@ struct ProjectAddView: View {
                                         .frame(minWidth: 360, minHeight: 80)
                                         .cornerRadius(20)
                                         .padding(.vertical, 5)
-                                        .modifier(TextFieldClearButton(nextText: $description))
+                                     //   .modifier(TextFieldClearButton(nextText: $description))
                                  //       .modifier(ChangeSmallerFrameSize())
                                 }
                                 

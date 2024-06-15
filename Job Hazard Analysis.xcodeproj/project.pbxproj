@@ -20,7 +20,7 @@
 		E499C2E52C13F33E00AF7BA8 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E42C13F33E00AF7BA8 /* VisualEffectBlur.swift */; };
 		E499C2E72C13F3B300AF7BA8 /* TextFrameViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E62C13F3B300AF7BA8 /* TextFrameViewModifier.swift */; };
 		E499C2E92C15B1C600AF7BA8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2E82C15B1C600AF7BA8 /* ImagePicker.swift */; };
-		E499C2EB2C19838900AF7BA8 /* PreEquipmentInspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */; };
+		E499C2EB2C19838900AF7BA8 /* PreEquipmentInspectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2EA2C19838900AF7BA8 /* PreEquipmentInspectionView.swift */; };
 		E499C2ED2C19860300AF7BA8 /* PreequipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499C2EC2C19860300AF7BA8 /* PreequipmentModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,7 @@
 		E499C2E42C13F33E00AF7BA8 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E499C2E62C13F3B300AF7BA8 /* TextFrameViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFrameViewModifier.swift; sourceTree = "<group>"; };
 		E499C2E82C15B1C600AF7BA8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreEquipmentInspection.swift; sourceTree = "<group>"; };
+		E499C2EA2C19838900AF7BA8 /* PreEquipmentInspectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreEquipmentInspectionView.swift; sourceTree = "<group>"; };
 		E499C2EC2C19860300AF7BA8 /* PreequipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreequipmentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E499C2E12C13F13200AF7BA8 /* ProjectAddView.swift */,
-				E499C2EA2C19838900AF7BA8 /* PreEquipmentInspection.swift */,
+				E499C2EA2C19838900AF7BA8 /* PreEquipmentInspectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 				E499C2DF2C13F01300AF7BA8 /* Persistence.swift in Sources */,
 				E499C2E52C13F33E00AF7BA8 /* VisualEffectBlur.swift in Sources */,
 				E499C2E92C15B1C600AF7BA8 /* ImagePicker.swift in Sources */,
-				E499C2EB2C19838900AF7BA8 /* PreEquipmentInspection.swift in Sources */,
+				E499C2EB2C19838900AF7BA8 /* PreEquipmentInspectionView.swift in Sources */,
 				E499C2B12C13EA2100AF7BA8 /* Job_Hazard_AnalysisApp.swift in Sources */,
 				E499C2DD2C13EA6900AF7BA8 /* JobEntityCoreData.xcdatamodeld in Sources */,
 			);

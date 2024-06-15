@@ -11,8 +11,9 @@ import SwiftUI
 struct Job_Hazard_AnalysisApp: App {
     var body: some Scene {
         WindowGroup {
-           // ContentView()
-            ProjectAddView(needtoRefresh: .constant(true), projectEntities: ProjectEntity())
+            ContentView()
+         //   ProjectAddView(needtoRefresh: .constant(true), projectEntities: ProjectEntity())
+           
         }
     }
 }
