@@ -15,7 +15,6 @@ struct PreequipmentModel: Identifiable, Codable {
     var equipmentModelName: String
     var equipmentSerialNumber: String?
     
-    
     // From the Ground
     var periodicHeadline: String = "Note: The Periodic Maintenance Checklist as outlined in the Operator's Manual has been completed and any necessary maintenance items have been addressed "
     

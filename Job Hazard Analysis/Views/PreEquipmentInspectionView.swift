@@ -23,19 +23,34 @@ struct PreEquipmentInspectionView: View {
     @State var naharnesses: String = "N/A"
     @State var natires: String = "N/A"
     @State var naundertheMachine: String = "N/A"
+    @State var nabelts: String = "N/A"
+    @State var naCoolerCores: String = "N/A"
+    
+    @State var naCabWindows: String = "N/A"
+    @State var naoverallCleanliness: String = "N/A"
+    @State var naoperatorManual: String = "N/A"
+    @State var naSeats: String = "N/A"
+    @State var naMirror: String = "N/A"
+    @State var nawwindShield: String = "N/A"
+    @State var nadefroster: String = "N/A"
+    @State var nagauges: String = "N/A"
+    @State var nafuel: String = "N/A"
+    @State var nafireExtinguisher: String = "N/A"
+    @State var nahorn: String = "N/A"
     
     var backgroundGradientlight =  Color(#colorLiteral(red: 0.7869432202, green: 0.8728674827, blue: 0.8820440269, alpha: 0.6454884106))
     @State var preEquipment: PreequipmentModel
     
     private func buttonLabel(withButton placeHolder: String) -> some View {
         Text(placeHolder)
-            .font(.subheadline)
+            .font(.title3)
             .fontWeight(.semibold)
             .foregroundStyle(Color.white)
             .frame(width: 160, height: 46)
             .background(.indigo)
             .cornerRadius(12)
             .padding(.vertical, 5)
+            .offset(y: 14)
     }
     
     private func titleView(_ value: String, _ color: Color = .black.opacity(0.9)) -> some View {
@@ -161,118 +176,242 @@ extension Date {
 extension PreEquipmentInspectionView {
     @ViewBuilder
     func preInspectionCheckView() -> some View {
-        List {
-            VStack(alignment: .leading, spacing: 10) {
-                HStack(spacing: 0) {
-                    Text(preEquipment.overall)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                    
-                    Picker("", selection: $naSelectionOverall, content: {
-                        ForEach(safeArray, id: \.self) { safety in
-                            Text(safety)
+        VStack {
+            
+            List {
+                Section {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("From the ground:")
+                            .fontWeight(.medium)
+                            .font(.headline)
+                            .underline()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.overall)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                            
+                            Picker("", selection: $naSelectionOverall, content: {
+                                ForEach(safeArray, id: \.self) { safety in
+                                    Text(safety)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
-                }
-                .frame(minWidth: 320, alignment: .bottomLeading)
-                Divider()
-                
-                HStack(spacing: 0) {
-                    Text(preEquipment.grabbars)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                    
-                    Picker("", selection: $naGrabbars, content: {
-                        ForEach(safeArray, id: \.self) { items in
-                            Text(items)
+                        .frame(minWidth: 320, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.grabbars)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                            
+                            Picker("", selection: $naGrabbars, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
-                }
-                .frame(minWidth: 320, alignment: .bottomLeading)
-                Divider()
-                
-                HStack(spacing: 0) {
-                    Text(preEquipment.frame)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                    
-                    Picker("", selection: $naFrame, content: {
-                        ForEach(safeArray, id: \.self) { items in
-                            Text(items)
+                        .frame(minWidth: 320, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.frame)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naFrame, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
-                }
-                .frame(minWidth: 340, alignment: .bottomLeading)
-                Divider()
-                
-                HStack(spacing: 0) {
-                    Text(preEquipment.harnesses)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                    
-                    Picker("", selection: $naharnesses, content: {
-                        ForEach(safeArray, id: \.self) { items in
-                            Text(items)
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.harnesses)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naharnesses, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
-                }
-                .frame(minWidth: 340, alignment: .bottomLeading)
-                Divider()
-                
-                HStack(spacing: 0) {
-                    Text(preEquipment.tires)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                    
-                    Picker("", selection: $natires, content: {
-                        ForEach(safeArray, id: \.self) { items in
-                            Text(items)
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.tires)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $natires, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
-                }
-                .frame(minWidth: 340, alignment: .bottomLeading)
-                Divider()
-                
-                HStack(spacing: 0, content: {
-                    Text(preEquipment.undertheMachine)
-                        .fontWeight(.medium)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(2)
-                    
-                    Picker("", selection: $naundertheMachine, content: {
-                        ForEach(safeArray, id: \.self) { items in
-                            Text(items)
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0, content: {
+                            Text(preEquipment.undertheMachine)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naundertheMachine, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
                         }
-                    })
-                    .pickerStyle(.segmented)
-                    .padding(.horizontal, 16)
+                        )
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.belts)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                            
+                            Picker("", selection: $nabelts, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.coolerCOres)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naCoolerCores, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                            
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        Text("From Operators Cab:")
+                            .fontWeight(.medium)
+                            .font(.headline)
+                            .underline()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.cabWindows)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: {$naCabWindows}(), content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.overallCleanliness)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naoverallCleanliness) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.operatorManual)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naoperatorManual) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.seats)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naSeats) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                    }
                 }
-                )
-                .frame(minWidth: 340, alignment: .bottomLeading)
-                Divider()
-                
-                
-                
-                
             }
+            // Add ListStyle Collapsible
+            .listStyle(.sidebar)
+            .frame(minWidth: 400)
+            
+     
         }
-        .frame(minWidth: 400)
     }
 }

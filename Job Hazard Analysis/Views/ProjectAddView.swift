@@ -167,7 +167,7 @@ struct ProjectAddView: View {
                                 }, label: {
                                     Text("Save")
                                         .fontWeight(.semibold)
-                                        .font(.title2)
+                                        .font(.title3)
                                         .padding()
                                         .frame(minWidth: 200, minHeight: 56)
                                         .foregroundStyle(.white)
