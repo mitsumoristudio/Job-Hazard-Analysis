@@ -37,6 +37,10 @@ struct PreEquipmentInspectionView: View {
     @State var nafuel: String = "N/A"
     @State var nafireExtinguisher: String = "N/A"
     @State var nahorn: String = "N/A"
+    @State var naparkBrakes: String = "N/A"
+    @State var naSteering: String = "N/A"
+    @State var natravelAlarm: String = "N/A"
+    @State var nadiagnostic: String = "N/A"
     
     var backgroundGradientlight =  Color(#colorLiteral(red: 0.7869432202, green: 0.8728674827, blue: 0.8820440269, alpha: 0.6454884106))
     @State var preEquipment: PreequipmentModel
@@ -177,7 +181,6 @@ extension PreEquipmentInspectionView {
     @ViewBuilder
     func preInspectionCheckView() -> some View {
         VStack {
-            
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 10) {
@@ -404,6 +407,135 @@ extension PreEquipmentInspectionView {
                         }
                         .frame(minWidth: 340, alignment: .bottomLeading)
                         Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.mirror)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naMirror) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.windshield)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $nawwindShield) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomLeading)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.defroster)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $nadefroster) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomTrailing)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.gauges)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $nagauges) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomTrailing)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.fireExtinguisher)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $nafireExtinguisher, content: {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            })
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomTrailing)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.horn)
+                                .fontWeight(.medium)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $nahorn) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                        }
+                        .frame(minWidth: 340, alignment: .bottomTrailing)
+                        Divider()
+                        
+                        HStack(spacing: 0) {
+                            Text(preEquipment.parkBrakes)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(2)
+                            
+                            Picker("", selection: $naparkBrakes) {
+                                ForEach(safeArray, id: \.self) { items in
+                                    Text(items)
+                                }
+                            }
+                            .pickerStyle(.segmented)
+                            .padding(.horizontal, 16)
+                            
+                        }
+                        .frame(minWidth: 340, alignment: .bottomTrailing)
+                        Divider()
+                        
+                        
                     }
                 }
             }

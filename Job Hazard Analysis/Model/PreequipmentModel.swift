@@ -38,7 +38,7 @@ struct PreequipmentModel: Identifiable, Codable {
     var gauges: String = "Gauges, Indicator Lights, Switches"
     var fuel: String = "Fuel"
     var fireExtinguisher: String = "Fire Extinguisher"
-    var horn: String = "horn"
+    var horn: String = "Horn"
     var parkBrakes: String = "Brakes"
     var steering: String = "Steering/Secondary Steering"
     var travelAlarm: String = "Travel Alarm, Backup Alarm"
